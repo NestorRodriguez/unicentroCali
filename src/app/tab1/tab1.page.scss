@@ -1,0 +1,32 @@
+.welcome ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.header{
+  color: black !important;
+}
+
+.ion-img{
+  width: auto;
+  height: 680px;
+  text-align: center;
+  align-self: auto;
+}
+
+.title{
+  color: black !important;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: Primario 2px solid;
+  padding: 15px;
+}
+
+.img-user{
+  display: inline-block;
+  width: 10%;
+  float: right;
+}
+
+ion-item.ion-icon:hover .ion.label:hover {
+  background-color: slategray;
+}

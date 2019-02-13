@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ubicación 
+      <a href=""><ion-img class="img-user" src="/assets/User.png"></ion-img></a>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome">
+      <ion-card-header class="justify">      
+          <ion-card-title class="title">Localización</ion-card-title>
+          <ion-img class="ion-img" src="/assets/Mapa.jpg"></ion-img>
+          <ion-card-subtitle class="subtittle">Te encuentras en Despacho</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content class="justify">
+          <ion-item>
+              <ion-label position="floating">Selecciona a donde ir</ion-label>
+              <ion-select [(ngModel)]="selectedLocation" name="location">
+                <ion-select-option *ngFor="let location of locations" [value]="location">{{location}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-button expand="full" shape="round" color="primary" (click)="letsGo()" [hidden]="!selectedLocation">Vamos
+              <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </ion-button>
+      </ion-card-content>
+      <!-- <ion-slides pager="true" [options]="slideOpts">
+          <ion-slide>
+              <ion-card class="slider">
+                <ion-img class="ion-img" src="/assets/Uni1.png"></ion-img>  
+                <ion-card-header>
+                    <ion-card-title>locales</ion-card-title>
+                  </ion-card-header>      
+                  <ion-card-content class="justify">
+                      Amplia variedad bajo el concepto de Ciudadela Comercial. Las mejores marcas y todo tipo de servicios los puede 
+                      encontrar en Unicentro Cali distribuidos en 546 locales comerciales y 291 oficinas.
+                  </ion-card-content>
+                </ion-card>
+          </ion-slide>
+          <ion-slide>
+              <ion-card class="slider">
+                  <ion-img class="ion-img" src="/assets/Uni2.jpg"></ion-img>  
+                  <ion-card-header>
+                      <ion-card-title>Zonas de entretenimiento</ion-card-title>
+                    </ion-card-header>      
+                    <ion-card-content class="justify">
+                        La diversión y el entretenimiento son el complemento de una apuesta arquitectónica pensada para un contacto 
+                        directo con el medio ambiente. La más avanzada tecnología en 12 salas cine, dos extraordinarias fuentes de agua: 
+                        Oasis y Plazoleta Central y la más variada programación de fin de semana, donde la lúdica es una herramienta 
+                        importante para el aprendizaje y el sano esparcimiento
+                    </ion-card-content>
+                  </ion-card>
+          </ion-slide>
+          <ion-slide>
+              <ion-card class="slider">
+                  <ion-img class="ion-img" src="/assets/Uni3.jpg"></ion-img>  
+                  <ion-card-header>
+                      <ion-card-title>Salones de eventos</ion-card-title>
+                    </ion-card-header>      
+                    <ion-card-content class="justify">
+                        Caracolí Ubicado en el pasillo 5 al lado de los cajeros Colpatria
+                        Los grandes eventos de las empresas o las familias tienen un lugar en este cómodo espacio con capacidad para 200
+                         personas en acomodación tipo auditorio, con equipos multimedia: Video Beam 4200 lúmenes con conexión inalámbrica, pantalla para proyectar, amplificación de sonido para conexión de portátil, equipo de sonido, tablero en acrílico y micrófono.
+                    </ion-card-content>
+                  </ion-card>
+          </ion-slide>
+        </ion-slides> -->
+  </ion-card>
+</ion-content>

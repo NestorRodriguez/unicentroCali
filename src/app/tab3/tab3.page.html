@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Realidad
+      <a href=""><ion-img class="img-user" src="/assets/User.png"></ion-img></a>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome">
+        <ion-card-header class="justify">      
+          <ion-card-title class="title">Realidad Virtual</ion-card-title>
+          <ion-img class="ion-img" src="/assets/RealidadAumentada.gif"></ion-img>
+          <ion-card-subtitle class="subtitle">Ubica tu producto, toma una foto y veras el precio del producto</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="justify">
+          <ion-button expand="full" shape="round" color="primary" (click)="takePhoto()">
+            <ion-icon slot="start" name="camera"></ion-icon><ion-label>Tomar Foto</ion-label>
+          </ion-button>
+        </ion-card-content> 
+      </ion-card>
+</ion-content>

@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "/unicentro/platforms/android/app/build/outputs/apk/release/unicentroV1.keystore",
+            "storePassword": "Axede2019",
+            "alias": "unicentroV1",
+            "password" : "Axede2019",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "/unicentro/platforms/android/app/build/outputs/apk/release/unicentroV1.keystore",
+            "storePassword": "Axede2019",
+            "alias": "unicentroV1",
+            "password" : "Axede2019",
+            "keystoreType": ""
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Bienvenido a nuestra App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content>  
+    <form novalidate="" (ngSubmit)="login(forma)" #forma="ngForm">
+        <ion-img class="ion-img" src="/assets/Logo.png"></ion-img>
+          <ion-item>
+           <ion-input placeholder="Usuario" type="text" required ngModel #user="ngModel" name="user" required></ion-input> 
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Contraseña" type="password" required ngModel #password="ngModel" name="password" required></ion-input>
+        </ion-item> 
+        <ion-list>
+            <ion-button expand="full" shape="round" color="primary" type="submit">Ingresar</ion-button>
+        </ion-list>
+    </form>  
+</ion-content>

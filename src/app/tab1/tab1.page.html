@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Home
+      <a href=""><ion-img class="img-user" src="/assets/User.png"></ion-img></a>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome">
+      <ion-img class="ion-img" src="/assets/Logo.png"></ion-img>
+      <ion-card-header class="justify">
+        <ion-card-title class="title" >BIENVENIDO</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="justify">
+        <p>La Ciudadela Comercial más importante de la región, con el top of mind más alto en el sector de los centros comerciales del país, le apuesta a convertirse en una experiencia social, cultural y ambiental única. El lugar en que clientes y visitantes lo encuentran todo.</p>
+        <P>Aquí es posible encontrar la mejor oferta comercial y gastronómica de la ciudad, espacios de integración familiar, actividades lúdicas y culturales, naturaleza y mucha diversión. Concebida desde sus inicios en armonía con el medio ambiente, es el hogar de 830 árboles, entre los que se encuentran centenarios, samanes y chiminangos, además de 7 especies de palmas como gualanday y manilas.</P>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="welcome">
+      <ion-card-header class="justify">
+        <ion-card-title class="title" >NUESTROS ESPACIOS</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="justify">
+        <ion-item (click)="openModal1()">
+          <ion-icon slot="start" color="primary" name="cart"></ion-icon>
+          <ion-label>Locales</ion-label>
+        </ion-item>
+        <ion-item (click)="openModal2()">
+          <ion-icon slot="start" color="primary" name="bicycle"></ion-icon>
+          <ion-label>Zonas de Entretenimiento</ion-label>
+        </ion-item>
+         <ion-item (click)="openModal3()">
+          <ion-icon slot="start" color="primary" name="wine"></ion-icon>
+          <ion-label>Salones de Eventos</ion-label>
+        </ion-item>
+        <ion-item (click)="openModal4()">
+          <ion-icon slot="start" color="primary" name="people"></ion-icon>
+          <ion-label>Sala de Juntas</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
